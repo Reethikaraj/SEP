@@ -1,0 +1,19 @@
+POST http://localhost:5000/api/v1/user/register
+Content-Type: application/json
+
+{
+    "firstName":"Testing",
+    "lastName":"Testing",
+    "email": "Test1@gmail.com",
+    "password": "12345678"
+}
+### 
+POST http://localhost:5000/api/v1/user/login
+Content-Type: application/json
+
+{
+    "email": "Test1@gmail.com",
+    "password": "12345678"
+}
+###
+GET  http://localhost:5000/api/v1/user/logout
