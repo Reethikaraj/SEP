@@ -1,5 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
 import newEventRoute from './src/routes/newEventRoute.js'
 import errorMiddleware from './src/middlewares/error.js'
 import clientReqRoute from './src/routes/clientRequestRoute.js'
@@ -10,7 +11,8 @@ import userRoute from './src/routes/userRoute.js'
 
 dotenv.config()
 const app = express()
-app.use(express.json())
+app.use( express.json() )
+app.use(cors())
 
 //Event route
 app.use('/api/v1', newEventRoute)

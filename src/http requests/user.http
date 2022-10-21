@@ -4,8 +4,8 @@ Content-Type: application/json
 {
     "firstName":"Testing",
     "lastName":"Testing",
-    "email": "Test1@gmail.com",
-    "password": "12345678"
+    "email":"Test1@gmail.com",
+    "password":"12345678"
 }
 ### 
 POST http://localhost:5000/api/v1/user/login

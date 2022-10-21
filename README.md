@@ -1,5 +1,5 @@
 Installations
-npm i express mongoose dotenv validator cookie-parser nodemon
+npm i express mongoose dotenv validator cookie-parser nodemon cors
 
 Start command
 npm run dev
